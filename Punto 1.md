@@ -203,4 +203,41 @@ class Program
 
 ## Preguntas de teoria:
 
-- 
+#### 1. ¿Cuál es la diferencia entre la longitud de un array y la de una cadena?
+
+La diferencia entre la longitud de un array y la de una cadena está principalmente en qué representan y cómo se miden, aunque ambos conceptos se refieren al número de elementos que contienen.
+
+- **Array (arreglo):** Es una estructura de datos que almacena múltiples valores (números, cadenas, objetos, etc.) en posiciones indexadas.
+Longitud: representa la cantidad de elementos que contiene.
+- Ejemplo en C#:
+
+```cs
+int[] numeros = {1, 2, 3, 4};
+Console.WriteLine(numeros.Length);  // Output: 4
+```
+- **Cadena (String):** Es una secuencia de caracteres.
+Longitud: representa el número de caracteres en la cadena (incluyendo espacios, signos de puntuación, etc.).
+- Ejemplo en C#:
+
+```cs
+string saludo = "Hola";
+Console.WriteLine(saludo.Length);  // Output: 4
+```
+
+#### 2. ¿Qué es un error en tiempo de ejecución? escriba un ejemplo.
+Un error en tiempo de ejecución es un error que ocurre mientras se está ejecutando un programa, es decir, después de que ha sido compilado correctamente (en lenguajes compilados como C#).
+
+##### Errores comunes en tiempos de ejecución:
+- División por cero
+- Acceso a un índice fuera del rango de un array
+- Uso de una variable null o no inicializada
+- Problemas de conversión de tipos
+
+Estos errores no se detectan durante la compilación, sino que aparecen cuando el programa está en funcionamiento, y suelen causar que el programa se detenga inesperadamente.
+
+```cs
+int a = 10;
+int b = 0;
+int resultado = a / b;  // Error en tiempo de ejecución: división por cero.
+Console.WriteLine("Resultado: " + resultado);
+```
